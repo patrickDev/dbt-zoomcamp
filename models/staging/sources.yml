@@ -1,0 +1,13 @@
+version: 2
+
+sources:
+  - name: data_ride_ny
+    description: "Raw data sources for NYC taxi rides"
+    database: modular-magpie-485005-j6   # BigQuery project
+    schema: data_ride_ny               # BigQuery dataset
+    tables:
+      - name: green_tripdata
+        description: "Green taxi trip data from NYC TLC"
+
+      - name: yellow_tripdata
+        description: "Yellow taxi trip data from NYC TLC"
